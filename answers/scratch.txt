@@ -1,0 +1,47 @@
+SQL.LetsGetTogether.  ~/dev/SQL.LetsGetTogether.
+  .idea
+  answers
+    exercise1.sql
+    exercise2.sql
+    exercise3.sql
+    exercise4.sql
+    exercise5.sql
+    exercise6.sql
+  README.md
+External Libraries
+Scratches and Consoles
+
+
+Create table Enrollments ( id Integer Primary Key Not Null Auto_Increment, School varchar(100) );
+
+insert into Enrollments (School) Values
+('Temple'), ('Pennstate'),('University of Deleware'), ('Tokyo U'), ('UPenn'), ('Drexel'), ('Drexel'), ('Stanford');
+
+SELECT *
+FROM Enrollments
+LEFT JOIN Students
+ON Enrollments.id = Students.id;
+
+Select *
+From Enrollments
+inner join Students
+ON Enrollments.studentid=Students.studentid;
+
+Alter table Enrollments Add Column studentid integer After School;
+Alter into Enrollments (studentid) values (15), (13), (9), (5), (3);
+
+insernt into Enrollments (studentid) value (15) where id = 1;
+
+Update Enrollments Set studentid = 15 Where id = 1;
+Alter table Students rename column id to studentid;
+
+SELECT *
+From Enrollments
+Left Join Students
+On Enrollments.studentid=Students.studentid;
+
+SELECT *
+FROM Enrollments
+Inner Join Students
+ON Enrollments.studentid=Students.studentid;
+

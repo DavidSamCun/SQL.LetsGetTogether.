@@ -1,0 +1,33 @@
+exercise 1
+SELECT *
+FROM Enrollments
+Left JOIN Students
+ON Enrollments.id = Students.studentid;
+
+SELECT *
+FROM Enrollments
+Inner Join Students
+ON Enrollments.studentid=Students.studentid;
+
+SELECT * studentid, studentname,
+FROM Enrolments
+Full Outer Join Students
+ON Enrolments.StudentID=Students.StudentID;
+
+
+SELECT * studentid, StudentName, From Students
+Left Join Enrollments on
+FROM Enrolments
+Full Outer Join Students
+ON Enrolments.StudentID=Students.StudentID;
+
+
+SELECT *
+From Enrollments
+Left Join Students
+On Enrollments.studentid = Students.studentid
+Union
+Select *
+From Enrollments
+Right Join Students
+On Enrollments.studentid = Students.studentid;
