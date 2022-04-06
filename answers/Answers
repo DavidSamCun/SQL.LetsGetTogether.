@@ -4,24 +4,13 @@ FROM Enrollments
 Left JOIN Students
 ON Enrollments.id = Students.studentid;
 
+exercise 2
 SELECT *
 FROM Enrollments
 Inner Join Students
 ON Enrollments.studentid=Students.studentid;
 
-SELECT * studentid, studentname,
-FROM Enrolments
-Full Outer Join Students
-ON Enrolments.StudentID=Students.StudentID;
-
-
-SELECT * studentid, StudentName, From Students
-Left Join Enrollments on
-FROM Enrolments
-Full Outer Join Students
-ON Enrolments.StudentID=Students.StudentID;
-
-
+exercise 3
 SELECT *
 From Enrollments
 Left Join Students
@@ -31,3 +20,20 @@ Select *
 From Enrollments
 Right Join Students
 On Enrollments.studentid = Students.studentid;
+
+exercise 4
+Select Country, Count(*)
+From Students
+Group By Country
+
+exercise 5
+Select Country, Count(*)
+From Students
+Group By Country
+Order by Count(*) Desc;
+
+exercise 6
+Select Country, Count(*) AS cnt
+From Students
+Group By Country
+HAVING cnt > 10;

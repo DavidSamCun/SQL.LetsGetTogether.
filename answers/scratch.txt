@@ -45,3 +45,36 @@ FROM Enrollments
 Inner Join Students
 ON Enrollments.studentid=Students.studentid;
 
+Select Country, Count(*)
+From Students
+Group By Country
+Order by Count(*) Desc;
+
+
+Select Country, Count(*) AS cnt
+From Students
+Group By Country
+HAVING cnt > 1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
